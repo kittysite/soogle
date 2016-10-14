@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+    <script>
+function give_answer(){
+var myelement = document.getElementById("math_add");                           // give me element whose id is math_add
+
+
+
+
+var mynumber_1 = document.getElementById("number_1");                      // give me element whose id is number_1
+
+var mynumber_2 = document.getElementById("number_2");                      // give me element whose id is number_2
+
+var answer = parseInt(number_1.value )+ parseInt(number_2.value );         // add number_1 and number_2 together.
+
+var mynumber_3 = document.getElementById("answer_4");
+mynumber_3.value = answer                                                  // put contents of answer into mynumber_3's value
+           }
+function give_sub_answer(){
+var my_element = document.getElementById("math_sub");
+
+
+
+
+var mysub_1 = document.getElementById("sub1");
+
+var mysub_2 = document.getElementById("sub2");
+
+var subanswer = parseInt(sub1.value)- parseInt(sub2.value);
+
+var sub_1_2 = document.getElementById("sub4");
+sub_1_2.value = subanswer
+               }
+function give_x_answer(){
+var myElEment = document.getElementById("math_multi");
+
+
+
+
+var my_multi = document.getElementById("multi1");
+
+var my_multi2 = document.getElementById("multi2");
+
+var multianswer = parseInt(multi1.value)* parseInt(multi2.value);
+
+var multi_1_2 = document.getElementById("multi4");
+multi_1_2.value = multianswer
+        }
+function give_divide_answer(){
+var myELEMENT = document.getElementById("math_divide");
+
+var my_D1 = document.getElementById("divide1");
+
+var my_D2 = document.getElementById("divide2");
+
+var divanswer = parseInt(divide1.value)/(divide2.value);
+
+var divide_1_2 = document.getElementById("divide4");
+divide_1_2.value = divanswer
+         }
+	</script>
+</HEAD>
+
+<BODY>
+<input type="textbox" name="Search" value="search"  style="color:#8e9196; font-weight:bold;">
+<br/>
+<br/>
+<br/>
+<br/>
+<TABLE  BORDER="0"  WIDTH="100%">
+	<TR ALIGN="left" VALIGN="middle">
+		<TD width="20%">
+			<input type="text" id="number_1" value="number">
+		</TD>
+		<TD width="20%">
+		   +
+		</TD>
+		<TD width="20%">
+			<input type="text" id="number_2" value="number">
+		</TD>
+		<TD width="20%">
+			<input type="button" name="mytextbx" value=" = " onClick="give_answer();" id="math_add">
+		</TD>
+		<TD width="20%">
+			<input type="text" id="answer_4" value="answer">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+		   <input type="text" id="sub1" value="number">
+		</TD>
+		<TD>
+			-
+		</TD>
+		<TD>
+			<input type="text" id="sub2" value="number">
+		</TD>
+		<TD>
+			<input type="button" name="mytextbox_2" value=" = " onClick="give_sub_answer();" id="math_sub">
+		</TD>
+		<TD>
+			<input type="text" id="sub4" value="answer">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+		   <input type="text" id="multi1" value="number">
+		</TD>
+		<TD>
+			x
+		</TD>
+		<TD>
+			<input type="text" id="multi2" value="number">
+		</TD>
+		<TD>
+			<input type="button" name="mytextbox_3" value=" = " onClick="give_x_answer();" id="math_multi">
+		</TD>
+		<TD>
+			<input type="text" id="multi4" value="answer">
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+		   <input type="text" id="divide1" value="number">
+		</TD>
+		<TD>
+			&divide;
+		</TD>
+		<TD>
+			<input type="text" id="divide2" value="first number">
+		</TD>
+		<TD>
+			<input type="button" name="mytextbox_4" value=" = " onClick="give_divide_answer();" id="math_divide">
+		</TD>
+		<TD>
+			<input type="text" id="divide4" value="answer">
+		</TD>
+	</TR>
+
+</TABLE>
+</BODY>
+</HTML>
