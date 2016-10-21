@@ -1,5 +1,13 @@
 <HTML>
 <HEAD>
+<style>
+td, th {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+</style>
     <script>
 function give_answer(){
 var myelement = document.getElementById("math_add");                           // give me element whose id is math_add
@@ -64,7 +72,7 @@ divide_1_2.value = divanswer
 <BODY>
 <h1 style="color:blue">Calculator</h1>
 <br/>
-<TABLE  BORDER="1"  WIDTH="80%" align="center">
+<TABLE    WIDTH="80%" align="center">
 	<TR ALIGN="left" VALIGN="middle">
 		<TD width="20%">
 			<input type="text" id="number_1" placeholder="first number">
